@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find jnmouse_ros)/launch/jnmouse.launch" />
+    <node pkg="jnmouse_corridor" name="wall_around" type="wall_around.py" />
+</launch>
