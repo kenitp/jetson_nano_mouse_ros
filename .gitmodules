@@ -1,0 +1,24 @@
+[submodule "jetson_nano_csi_cam_ros"]
+	path = jetson_nano_csi_cam_ros
+	url = https://github.com/rt-net/jetson_nano_csi_cam_ros.git
+[submodule "gscam"]
+	path = gscam
+	url = https://github.com/rt-net/gscam.git
+[submodule "async_web_server_cpp"]
+	path = async_web_server_cpp
+	url = https://github.com/GT-RAIL/async_web_server_cpp.git
+[submodule "jnmouse_ros_examples"]
+	path = jnmouse_ros_examples
+	url = https://github.com/rt-net/jnmouse_ros_examples.git
+[submodule "raspimouse_ros_examples"]
+	path = raspimouse_ros_examples
+	url = https://github.com/rt-net/raspimouse_ros_examples.git
+[submodule "raspimouse_slam_navigation_ros"]
+	path = raspimouse_slam_navigation_ros
+	url = https://github.com/rt-net/raspimouse_slam_navigation_ros.git
+[submodule "roswww"]
+	path = roswww
+	url = https://github.com/tork-a/roswww.git
+[submodule "web_video_server"]
+	path = web_video_server
+	url = https://github.com/RobotWebTools/web_video_server.git
