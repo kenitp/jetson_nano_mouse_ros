@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #encoding: utf8
 import sys, rospy, math
 from jnmouse_ros.msg import MotorFreqs
