@@ -16,13 +16,13 @@ class WallAround():
         self.sensor_values = messages
  
     def wall_front(self,ls):
-        return ls.left_forward > 50 or ls.right_forward > 50
+        return ls.left_forward > 200 or ls.right_forward > 200
  
     def too_right(self,ls):
-        return ls.right_side > 50
+        return ls.right_side > 200
      
     def too_left(self,ls):
-        return ls.left_side > 50
+        return ls.left_side > 200
  
     def run(self):
         rate = rospy.Rate(20)
@@ -31,7 +31,7 @@ class WallAround():
         data.linear.x = 0.0
         data.angular.z = 0.0
         while not rospy.is_shutdown():
-            data.linear.x = 0.2
+            data.linear.x = 0.1
  
             if self.wall_front(self.sensor_values):
                 data.angular.z = - math.pi
@@ -44,8 +44,8 @@ class WallAround():
                 # data.angular.z = e * math.pi / 180.0
                 data.angular.z = 0
 
-            if self.sensor_values.sum_all >= 500:
-                data.linear.x = -0.1
+            if self.sensor_values.sum_all >= 800:
+                data.linear.x = -0.05
                 data.angular.z = 0
 
             self.cmd_vel.publish(data)
